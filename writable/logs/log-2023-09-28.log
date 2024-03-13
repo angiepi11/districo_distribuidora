@@ -1,0 +1,25 @@
+CRITICAL - 2023-09-28 14:04:01 --> Undefined variable $destino
+in APPPATH\Views\usuario\enviarfiltro.php on line 21.
+ 1 APPPATH\Views\usuario\enviarfiltro.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $destino', 'C:\\xampp\\htdocs\\distribuidora\\app\\Views\\usuario\\enviarfiltro.php', 21)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\distribuidora\\app\\Views\\usuario\\enviarfiltro.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('usuario/enviarfiltro', [], true)
+ 5 APPPATH\Controllers\Home.php(44): view('usuario/enviarfiltro')
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home->filtro()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-28 17:57:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 18:19:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 18:23:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 18:27:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 18:31:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-28 19:05:57 --> Invalid file: "usuario/login.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuario/login.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('usuario/login', [], true)
+ 3 APPPATH\Controllers\Home.php(80): view('usuario/login')
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home->registrarse()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

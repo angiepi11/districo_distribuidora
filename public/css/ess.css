@@ -1,0 +1,112 @@
+/* Estilos generales del formulario */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilos específicos para el botón */
+.btn-primary {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+/* Opcional: Estilos para el contenedor principal del formulario */
+.cart-total {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+        body {
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f2f2f2;
+            font-family: 'Poppins', sans-serif; /* Cambio realizado: Cambia el tipo de fuente */
+
+        }
+
+        .payment-form {
+            width: 400px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .payment-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+		.payment-methods {
+            display: flex;
+            justify-content: center; /* Cambio realizado: Centrar los métodos de pago */
+            flex-wrap: wrap; /* Cambio realizado: Permitir que los métodos de pago se envuelvan en varias líneas */
+            gap: 10px; /* Cambio realizado: Espacio entre los métodos de pago */
+            margin-bottom: 20px;
+        }
+
+        .payment-method {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border: 2px solid #e4e4e4;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .payment-method.selected {
+            border-color: rgb(22, 203, 62);
+        }
+
+        .payment-method i {
+            margin-right: 10px;
+        }
+
+        .payment-method-details {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .payment-method-details label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .payment-method-details input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #e4e4e4;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            background-color: #62d85e;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }

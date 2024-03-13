@@ -1,0 +1,90 @@
+.contenedor-fluid {
+    background-color: white;
+}
+.contenedor {
+    padding: 20px;
+    max-width: 885px;
+    margin: 0 auto; 
+}
+
+.fila {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-md-3 {
+    margin-bottom: 15px;
+    flex: 1; /* Ocupar todo el ancho en pantallas pequeñas */
+}
+
+.margen-inferior-md-0 {
+    margin-bottom: 0; 
+} 
+
+.seleccion-personalizada {
+    height: 47px;
+    width: 100%;
+    padding: 0 1rem;
+    margin-bottom: 15px; /* Espacio entre los select */
+}
+
+.boton {
+    height: 47px;
+    width: 100%; 
+}
+.formulario{
+    border: solid;
+}
+.btn-primario {
+   
+    background-color: #70b332;
+    color: #fff; 
+    border: none;
+    width: 100%;
+    margin-top: -1px;
+
+}
+
+.btn-bloque {
+    display: block; 
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .col-md-3 {
+        flex: 100%; /* Ocupar todo el ancho en pantallas pequeñas */
+    }
+
+    .boton {
+        margin-top: -10px; /* Espacio entre el select y el botón en pantallas pequeñas */
+    width: 98%;
+    }
+}
+/* Media query para pantallas más grandes */
+@media (min-width: 769px) {
+    .fila {
+        justify-content: space-between; /* Distribuir los elementos a lo largo del contenedor */
+    }
+
+    .boton {
+        width: calc(130% - 5px); /* Ajustar el ancho del botón restando el margen derecho */
+        margin-top: 0;
+        margin-left: -110px;
+    }
+
+    .seleccion-personalizada {
+        width: calc(130% ); /* Ajustar el ancho del select restando el margen derecho */
+        margin-left: 200px; /* Ajusta este valor según sea necesario */
+    }
+    select[name="presupuesto"] {
+        margin-left: -140px; /* Ajusta este valor según sea necesario */
+    }
+    select[name="productos"] {
+        margin-left: 150px; /* Ajusta este valor según sea necesario */
+    }
+    .seleccion-presupuesto,
+    .seleccion-productos {
+        width: calc(100% - 25px); /* Ajustar el ancho restando el margen derecho e izquierdo */
+    }
+    
+}
